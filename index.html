@@ -6,7 +6,6 @@
     <title>Портфолио — Ведяйкин Антон</title>
 
     <style>
-        /* ---------- RESET ---------- */
         * {
             margin: 0;
             padding: 0;
@@ -20,7 +19,6 @@
             line-height: 1.6;
         }
 
-        /* ---------- NAVBAR ---------- */
         .navbar {
             position: sticky;
             top: 0;
@@ -50,7 +48,6 @@
             background: #3498db;
         }
 
-        /* ---------- CONTAINER ---------- */
         .container {
             max-width: 1000px;
             margin: 30px auto;
@@ -60,7 +57,6 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.08);
         }
 
-        /* ---------- PROFILE ---------- */
         .profile {
             text-align: center;
             margin-bottom: 30px;
@@ -94,7 +90,6 @@
             border-radius: 10px;
         }
 
-        /* ---------- SECTIONS ---------- */
         .section {
             margin-top: 40px;
             padding: 25px;
@@ -110,7 +105,6 @@
             padding-left: 12px;
         }
 
-        /* ---------- SKILLS ---------- */
         .skills-list {
             display: flex;
             flex-wrap: wrap;
@@ -125,7 +119,6 @@
             font-weight: bold;
         }
 
-        /* ---------- PROJECTS ---------- */
         .project-item {
             background: white;
             padding: 20px;
@@ -161,7 +154,6 @@
             text-decoration: underline;
         }
 
-        /* ---------- COURSES ---------- */
         .courses-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -181,7 +173,6 @@
             margin-bottom: 10px;
         }
 
-        /* ---------- FOOTER ---------- */
         footer {
             margin-top: 50px;
             text-align: center;
@@ -197,7 +188,6 @@
             margin: 8px 0;
         }
 
-        /* ---------- ADAPTIVE ---------- */
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -215,7 +205,6 @@
 
 <body>
 
-    <!-- ===== NAVBAR ===== -->
     <div class="navbar">
         <div class="nav-container">
             <a href="#about" class="nav-link">Обо мне</a>
@@ -230,7 +219,6 @@
         </div>
     </div>
 
-    <!-- ===== CONTENT ===== -->
     <div class="container">
 
         <!-- PROFILE -->
@@ -249,16 +237,9 @@
         <!-- ABOUT -->
         <div class="section" id="about">
             <h2>Обо мне</h2>
-            <p>
-                Студент направления «Информационные системы и программирование».
-                Изучаю backend и web-разработку, активно работаю
-                с Django, Laravel, SQL и современными веб-технологиями.
-            </p>
+            <p>Студент направления «Информационные системы и программирование». Изучаю backend и web-разработку, активно работаю с Django, Laravel, SQL и современными веб-технологиями.</p>
             <br />
-            <p>
-                Интересуюсь разработкой информационных систем,
-                backend-приложений и автоматизацией процессов.
-            </p>
+            <p>Интересуюсь разработкой информационных систем, backend-приложений и автоматизацией процессов.</p>
         </div>
 
         <!-- SKILLS -->
@@ -282,32 +263,26 @@
         <div class="section" id="courses">
             <h2>Курсы и сертификаты</h2>
             <div class="courses-grid">
-
                 <div class="course">
                     <div class="course-title">🏦 СберУниверситет</div>
                     <p>Курс по информационным технологиям</p>
                     <br />
                     <a href="assets/certificates/sber-certificate.jpg" target="_blank" class="project-link">📄 Посмотреть сертификат</a>
                 </div>
-
                 <div class="course">
                     <div class="course-title">🧡 Яндекс Лицей</div>
                     <p>Курс по программированию</p>
                     <br />
                     <a href="assets/certificates/yandex-certificate.jpg" target="_blank" class="project-link">📄 Посмотреть сертификат</a>
                 </div>
-
             </div>
         </div>
 
         <!-- CONFERENCES -->
         <div class="section" id="conferences">
             <h2>Конференции</h2>
-
             <div class="project-item">
-                <h3 class="project-title">
-                    XXVI Международная научно-практическая конференция НИТО‑2026
-                </h3>
+                <h3 class="project-title">XXVI Международная научно-практическая конференция НИТО‑2026</h3>
                 <p><strong>Тема:</strong> Новые информационные технологии в образовании</p>
                 <p><strong>Дата:</strong> 3–4 февраля 2026 г.</p>
                 <p><strong>Место:</strong> Москва, гостиница «Космос»</p>
@@ -316,9 +291,11 @@
                 <div class="project-role">Участник конференции</div>
                 <br />
 
-                <!-- ФОТО С КОНФЕРЕНЦИИ -->
+                <!-- ФОТО ТЕПЕРЬ МАЛЕНЬКОЕ: 300px максимум -->
                 <div style="display:flex; flex-wrap:wrap; gap:15px; margin:15px 0;">
-                    <img src="assets/events/conference-nito.jpg" alt="Фото с конференции НИТО-2026" style="max-width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+                    <img src="assets/events/conference-nito.jpg" 
+                         alt="Фото с конференции НИТО-2026" 
+                         style="max-width:300px; width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
                 </div>
 
                 <a href="assets/certificates/1c-conference.jpg" target="_blank" class="project-link">📄 Сертификат участника</a>
@@ -328,13 +305,11 @@
         <!-- PRACTICE -->
         <div class="section" id="practice">
             <h2>Практика</h2>
-
             <div class="project-item">
                 <h3 class="project-title">Производственная практика</h3>
                 <p>Работа с организацией пространства, каталогизацией и взаимодействием в команде.</p>
                 <div class="project-role">Командная работа</div>
             </div>
-
             <div class="project-item">
                 <h3 class="project-title">Сайт организации</h3>
                 <p>Разработка и поддержка сайта организации во время практики.</p>
@@ -345,7 +320,6 @@
         <!-- PORTFOLIO -->
         <div class="section" id="portfolio">
             <h2>Портфолио проектов</h2>
-
             <div class="project-item">
                 <h3 class="project-title">Документооборот (Django)</h3>
                 <p>Django-проект для управления документами. Система авторизации, CRUD, админ-панель.</p>
@@ -353,7 +327,6 @@
                 <br />
                 <a href="https://github.com/AntonioSniper/django-sitevaa" class="project-link" target="_blank">📂 GitHub репозиторий</a>
             </div>
-
             <div class="project-item">
                 <h3 class="project-title">Pet Shop (Laravel)</h3>
                 <p>Индивидуальный backend-проект на Laravel. Интернет-магазин для зоомагазина.</p>
@@ -361,14 +334,12 @@
                 <br />
                 <a href="https://github.com/AntonioSniper/pet-shop" class="project-link" target="_blank">📂 GitHub репозиторий</a>
             </div>
-
             <div class="project-item">
                 <h3 class="project-title">Чемпионат</h3>
                 <a href="https://antoniosniper.github.io/Chemp/" class="project-link" target="_blank">Модуль А</a><br />
                 <a href="https://antoniosniper.github.io/onlineschool/" class="project-link" target="_blank">Модуль Б</a><br />
                 <a href="https://antoniosniper.github.io/doska/" class="project-link" target="_blank">Модуль В</a>
             </div>
-
             <div class="project-item">
                 <h3 class="project-title">Визуальная новелла</h3>
                 <a href="https://antoniosniper.github.io/practikatwine/" class="project-link" target="_blank">Открыть проект</a>
@@ -378,8 +349,6 @@
         <!-- OLYMPIADS -->
         <div class="section" id="olympiads">
             <h2>Олимпиады и соревнования</h2>
-
-            <!-- ИТ-Планета -->
             <div class="project-item">
                 <h3 class="project-title">🌍 ИТ-Планета</h3>
                 <p>Международная олимпиада в сфере информационных технологий.</p>
@@ -390,7 +359,6 @@
                 <br />
                 <a href="https://it-planet.org/" target="_blank" class="project-link">🌐 Сайт олимпиады</a>
             </div>
-
             <ul>
                 <li>ArtMasters</li>
                 <li>Траектория будущего</li>
@@ -405,7 +373,7 @@
             <a href="https://drive.google.com/" class="project-link" target="_blank">Материалы и документы</a>
         </div>
 
-        <!-- CERTIFICATES (общий блок) -->
+        <!-- CERTIFICATES -->
         <div class="section">
             <h2>Сертификаты</h2>
             <a href="https://drive.google.com/drive/folders/1Ja7yiK9vIZOBZXcZ9NSjsYt5KAQRcCHJ" class="project-link" target="_blank">Открыть сертификаты</a>
@@ -423,7 +391,6 @@
             <p>💬 Telegram: <strong>@karton790</strong></p>
         </div>
 
-        <!-- FOOTER -->
         <footer>
             <p>© 2025 Ведяйкин Антон</p>
             <br />
