@@ -19,8 +19,6 @@
             line-height: 1.6;
         }
 
-        /* NAVBAR */
-
         .navbar {
             position: sticky;
             top: 0;
@@ -50,8 +48,6 @@
             background: #3498db;
         }
 
-        /* CONTAINER */
-
         .container {
             max-width: 1000px;
             margin: 30px auto;
@@ -60,8 +56,6 @@
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(0,0,0,0.08);
         }
-
-        /* PROFILE */
 
         .profile {
             text-align: center;
@@ -96,8 +90,6 @@
             border-radius: 10px;
         }
 
-        /* SECTION */
-
         .section {
             margin-top: 40px;
             padding: 25px;
@@ -113,8 +105,6 @@
             padding-left: 12px;
         }
 
-        /* SKILLS */
-
         .skills-list {
             display: flex;
             flex-wrap: wrap;
@@ -128,8 +118,6 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.08);
             font-weight: bold;
         }
-
-        /* PROJECTS */
 
         .project-item {
             background: white;
@@ -166,11 +154,9 @@
             text-decoration: underline;
         }
 
-        /* COURSES */
-
         .courses-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
 
@@ -186,8 +172,6 @@
             color: #2c3e50;
             margin-bottom: 10px;
         }
-
-        /* FOOTER */
 
         footer {
             margin-top: 50px;
@@ -209,11 +193,9 @@
             .container {
                 padding: 20px;
             }
-
             .nav-container {
                 gap: 8px;
             }
-
             .nav-link {
                 padding: 8px 12px;
                 font-size: 14px;
@@ -231,6 +213,7 @@
             <a href="#about" class="nav-link">Обо мне</a>
             <a href="#skills" class="nav-link">Навыки</a>
             <a href="#courses" class="nav-link">Курсы</a>
+            <a href="#conferences" class="nav-link">Конференции</a>
             <a href="#practice" class="nav-link">Практика</a>
             <a href="#portfolio" class="nav-link">Портфолио</a>
             <a href="#olympiads" class="nav-link">Олимпиады</a>
@@ -244,20 +227,9 @@
         <!-- PROFILE -->
 
         <div class="profile">
-            <!--
-                ЧТОБЫ ПОСТАВИТЬ СВОЮ АВАТАРКУ:
-                1. Найди фото в формате JPG или PNG (квадратное, лучше 500x500)
-                2. Назови его photo.jpg
-                3. Положи в папку img/ (рядом с index.html)
-                4. Если хочешь другое имя или формат — замени photo.jpg на своё имя файла
-            -->
             <img src="img/photo.jpg" alt="Фото Антона Ведяйкина" class="photo">
-
             <h1>Ведяйкин Антон</h1>
-
-            <div class="tagline">
-                Python / Django / Laravel Developer
-            </div>
+            <div class="tagline">Python / Django / Laravel Developer</div>
         </div>
 
         <div class="contact">
@@ -270,15 +242,12 @@
 
         <div class="section" id="about">
             <h2>Обо мне</h2>
-
             <p>
                 Студент направления «Информационные системы и программирование».
                 Изучаю backend и web-разработку, активно работаю
                 с Django, Laravel, SQL и современными веб-технологиями.
             </p>
-
             <br>
-
             <p>
                 Интересуюсь разработкой информационных систем,
                 backend-приложений и автоматизацией процессов.
@@ -289,7 +258,6 @@
 
         <div class="section" id="skills">
             <h2>Навыки</h2>
-
             <div class="skills-list">
                 <div class="skill">HTML</div>
                 <div class="skill">CSS</div>
@@ -307,41 +275,80 @@
         <!-- COURSES -->
 
         <div class="section" id="courses">
-            <h2>Курсы</h2>
-
+            <h2>Курсы и сертификаты</h2>
             <div class="courses-grid">
 
                 <div class="course">
-                    <div class="course-title">
-                        Основы программирования
-                    </div>
-
+                    <div class="course-title">📚 Основы программирования</div>
                     <p>Stepik.org</p>
-
                     <br>
-
-                    <p>
-                        Изучение алгоритмов, структур данных
-                        и базового программирования.
-                    </p>
+                    <p>Изучение алгоритмов, структур данных и базового программирования.</p>
                 </div>
 
                 <div class="course">
-                    <div class="course-title">
-                        Веб-разработка
-                    </div>
-
+                    <div class="course-title">🌐 Веб-разработка</div>
                     <p>Frontend + Backend</p>
-
                     <br>
+                    <p>HTML, CSS, JavaScript, работа с backend-технологиями.</p>
+                </div>
 
-                    <p>
-                        HTML, CSS, JavaScript,
-                        работа с backend-технологиями.
-                    </p>
+                <div class="course">
+                    <div class="course-title">🏦 СберУниверситет</div>
+                    <p>Курс по информационным технологиям</p>
+                    <br>
+                    <a href="assets/certificates/sber-certificate.jpg" target="_blank" class="project-link">📄 Посмотреть сертификат</a>
+                </div>
+
+                <div class="course">
+                    <div class="course-title">🧡 Яндекс Лицей</div>
+                    <p>Курс по программированию</p>
+                    <br>
+                    <a href="assets/certificates/yandex-certificate.jpg" target="_blank" class="project-link">📄 Посмотреть сертификат</a>
                 </div>
 
             </div>
+        </div>
+
+        <!-- CONFERENCES -->
+
+        <div class="section" id="conferences">
+            <h2>Конференции</h2>
+
+            <div class="project-item">
+                <h3 class="project-title">
+                    XXVI Международная научно-практическая конференция НИТО-2026
+                </h3>
+
+                <p>
+                    <strong>Тема:</strong> Новые информационные технологии в образовании
+                </p>
+
+                <p>
+                    <strong>Дата:</strong> 3–4 февраля 2026 г.
+                </p>
+
+                <p>
+                    <strong>Место:</strong> Москва, гостиница «Космос»
+                </p>
+
+                <br>
+
+                <p>
+                    Участие в конференции, посвящённой современным
+                    информационным технологиям в образовательной среде.
+                </p>
+
+                <div class="project-role">
+                    Участник конференции
+                </div>
+
+                <br>
+
+                <a href="assets/certificates/1c-conference.jpg" target="_blank" class="project-link">
+                    📄 Сертификат участника
+                </a>
+            </div>
+
         </div>
 
         <!-- PRACTICE -->
@@ -350,33 +357,15 @@
             <h2>Практика</h2>
 
             <div class="project-item">
-                <h3 class="project-title">
-                    Производственная практика
-                </h3>
-
-                <p>
-                    Работа с организацией пространства,
-                    каталогизацией и взаимодействием в команде.
-                </p>
-
-                <div class="project-role">
-                    Командная работа
-                </div>
+                <h3 class="project-title">Производственная практика</h3>
+                <p>Работа с организацией пространства, каталогизацией и взаимодействием в команде.</p>
+                <div class="project-role">Командная работа</div>
             </div>
 
             <div class="project-item">
-                <h3 class="project-title">
-                    Сайт организации
-                </h3>
-
-                <p>
-                    Разработка и поддержка сайта организации
-                    во время практики.
-                </p>
-
-                <div class="project-role">
-                    HTML / CSS / JS
-                </div>
+                <h3 class="project-title">Сайт организации</h3>
+                <p>Разработка и поддержка сайта организации во время практики.</p>
+                <div class="project-role">HTML / CSS / JS</div>
             </div>
         </div>
 
@@ -385,86 +374,34 @@
         <div class="section" id="portfolio">
             <h2>Портфолио проектов</h2>
 
-            <!-- Django проект -->
             <div class="project-item">
-                <h3 class="project-title">
-                    Документооборот (Django)
-                </h3>
-
-                <p>
-                    Django-проект для управления документами.
-                    Система авторизации, CRUD, админ-панель.
-                </p>
-
-                <div class="project-role">
-                    Django + SQL
-                </div>
-
+                <h3 class="project-title">Документооборот (Django)</h3>
+                <p>Django-проект для управления документами. Система авторизации, CRUD, админ-панель.</p>
+                <div class="project-role">Django + SQL</div>
                 <br>
-
-                <a href="https://github.com/AntonioSniper/django-sitevaa"
-                   class="project-link" target="_blank">
-                    📂 GitHub репозиторий
-                </a>
-            </div>
-
-            <!-- Laravel проект -->
-            <div class="project-item">
-                <h3 class="project-title">
-                    Pet Shop (Laravel)
-                </h3>
-
-                <p>
-                    Индивидуальный backend-проект на Laravel.
-                    Интернет-магазин для зоомагазина.
-                </p>
-
-                <div class="project-role">
-                    Laravel + SQLite
-                </div>
-
-                <br>
-
-                <a href="https://github.com/AntonioSniper/pet-shop"
-                   class="project-link" target="_blank">
-                    📂 GitHub репозиторий
-                </a>
+                <a href="https://github.com/AntonioSniper/django-sitevaa" class="project-link" target="_blank">📂 GitHub репозиторий</a>
             </div>
 
             <div class="project-item">
-                <h3 class="project-title">
-                    Чемпионат
-                </h3>
-
-                <a href="https://antoniosniper.github.io/Chemp/"
-                   class="project-link" target="_blank">
-                    Модуль А
-                </a>
-
+                <h3 class="project-title">Pet Shop (Laravel)</h3>
+                <p>Индивидуальный backend-проект на Laravel. Интернет-магазин для зоомагазина.</p>
+                <div class="project-role">Laravel + SQLite</div>
                 <br>
-
-                <a href="https://antoniosniper.github.io/onlineschool/"
-                   class="project-link" target="_blank">
-                    Модуль Б
-                </a>
-
-                <br>
-
-                <a href="https://antoniosniper.github.io/doska/"
-                   class="project-link" target="_blank">
-                    Модуль В
-                </a>
+                <a href="https://github.com/AntonioSniper/pet-shop" class="project-link" target="_blank">📂 GitHub репозиторий</a>
             </div>
 
             <div class="project-item">
-                <h3 class="project-title">
-                    Визуальная новелла
-                </h3>
+                <h3 class="project-title">Чемпионат</h3>
+                <a href="https://antoniosniper.github.io/Chemp/" class="project-link" target="_blank">Модуль А</a>
+                <br>
+                <a href="https://antoniosniper.github.io/onlineschool/" class="project-link" target="_blank">Модуль Б</a>
+                <br>
+                <a href="https://antoniosniper.github.io/doska/" class="project-link" target="_blank">Модуль В</a>
+            </div>
 
-                <a href="https://antoniosniper.github.io/practikatwine/"
-                   class="project-link" target="_blank">
-                    Открыть проект
-                </a>
+            <div class="project-item">
+                <h3 class="project-title">Визуальная новелла</h3>
+                <a href="https://antoniosniper.github.io/practikatwine/" class="project-link" target="_blank">Открыть проект</a>
             </div>
 
         </div>
@@ -473,7 +410,6 @@
 
         <div class="section" id="olympiads">
             <h2>Олимпиады и соревнования</h2>
-
             <ul>
                 <li>ArtMasters</li>
                 <li>ИТ-Планета</li>
@@ -485,82 +421,35 @@
 
         <div class="section" id="activity">
             <h2>Социальная активность</h2>
-
-            <p>
-                Участие в образовательных мероприятиях,
-                командных проектах и IT-сообществе.
-            </p>
-
+            <p>Участие в образовательных мероприятиях, командных проектах и IT-сообществе.</p>
             <br>
-
-            <a href="https://drive.google.com/"
-               class="project-link" target="_blank">
-                Материалы и документы
-            </a>
+            <a href="https://drive.google.com/" class="project-link" target="_blank">Материалы и документы</a>
         </div>
 
         <!-- CERTIFICATES -->
 
         <div class="section">
             <h2>Сертификаты</h2>
-
-            <a href="https://drive.google.com/drive/folders/1Ja7yiK9vIZOBZXcZ9NSjsYt5KAQRcCHJ?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto"
-               class="project-link" target="_blank">
-                Открыть сертификаты
-            </a>
+            <a href="https://drive.google.com/drive/folders/1Ja7yiK9vIZOBZXcZ9NSjsYt5KAQRcCHJ" class="project-link" target="_blank">Открыть сертификаты</a>
         </div>
 
         <!-- CONTACTS -->
 
         <div class="section" id="contacts">
             <h2>Контакты</h2>
-
-            <p>
-                📧 Email:
-                <strong>
-                    karton790@gmail.com
-                </strong>
-            </p>
-
+            <p>📧 Email: <strong>karton790@gmail.com</strong></p>
             <br>
-
-            <p>
-                💻 GitHub:
-                <a href="https://github.com/antoniosniper" target="_blank">
-                    github.com/antoniosniper
-                </a>
-            </p>
-
+            <p>💻 GitHub: <a href="https://github.com/antoniosniper" target="_blank">github.com/antoniosniper</a></p>
             <br>
-
-            <p>
-                📋 YouGile:
-                <a href="https://ru.yougile.com/board/bba3wvj265pi" target="_blank">
-                    Доска проектов
-                </a>
-            </p>
-
+            <p>📋 YouGile: <a href="https://ru.yougile.com/board/bba3wvj265pi" target="_blank">Доска проектов</a></p>
             <br>
-
-            <p>
-                💬 Telegram:
-                <strong>@karton790</strong>
-            </p>
+            <p>💬 Telegram: <strong>@karton790</strong></p>
         </div>
 
-        <!-- FOOTER -->
-
         <footer>
-            <p>
-                © 2026 Ведяйкин Антон
-            </p>
-
+            <p>© 2025 Ведяйкин Антон</p>
             <br>
-
-            <p>
-                Готов к стажировкам и работе
-                в сфере IT
-            </p>
+            <p>Готов к стажировкам и работе в сфере IT</p>
         </footer>
 
     </div>
