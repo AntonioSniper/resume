@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио — Ведяйкин Антон</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #2c3e50;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 16px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            background: #3498db;
+        }
+
+        /* CONTAINER */
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+        }
+
+        /* PROFILE */
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .photo {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #3498db;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        /* SECTION */
+
+        .section {
+            margin-top: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            scroll-margin-top: 100px;
+        }
+
+        .section h2 {
+            color: #3498db;
+            margin-bottom: 20px;
+            border-left: 5px solid #3498db;
+            padding-left: 12px;
+        }
+
+        /* SKILLS */
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            font-weight: bold;
+        }
+
+        /* PROJECTS */
+
+        .project-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .project-title {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .project-role {
+            display: inline-block;
+            margin-top: 10px;
+            background: #e8f4fc;
+            color: #2c3e50;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* COURSES */
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px;
+        }
+
+        .course {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .course-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #777;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        @media(max-width:768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .nav-container {
+                gap: 8px;
+            }
+
+            .nav-link {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+        <div class="nav-container">
+            <a href="#about" class="nav-link">Обо мне</a>
+            <a href="#skills" class="nav-link">Навыки</a>
+            <a href="#courses" class="nav-link">Курсы</a>
+            <a href="#practice" class="nav-link">Практика</a>
+            <a href="#portfolio" class="nav-link">Портфолио</a>
+            <a href="#olympiads" class="nav-link">Олимпиады</a>
+            <a href="#activity" class="nav-link">Активность</a>
+            <a href="#contacts" class="nav-link">Контакты</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- PROFILE -->
+
+        <div class="profile">
+            <img src="img/photo.jpg" class="photo">
+
+            <h1>Ведяйкин Антон</h1>
+
+            <div class="tagline">
+                Python / Django / Laravel Developer
+            </div>
+        </div>
+
+        <div class="contact">
+            📧 karton790@gmail.com |
+            📱 +7 (999) 962-68-22 |
+            📍 Москва
+        </div>
+
+        <!-- ABOUT -->
+
+        <div class="section" id="about">
+            <h2>Обо мне</h2>
+
+            <p>
+                Студент направления «Информационные системы и программирование».
+                Изучаю backend и web-разработку, активно работаю
+                с Django, Laravel, SQL и современными веб-технологиями.
+            </p>
+
+            <br>
+
+            <p>
+                Интересуюсь разработкой информационных систем,
+                backend-приложений и автоматизацией процессов.
+            </p>
+        </div>
+
+        <!-- SKILLS -->
+
+        <div class="section" id="skills">
+            <h2>Навыки</h2>
+
+            <div class="skills-list">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Python</div>
+                <div class="skill">Django</div>
+                <div class="skill">PHP</div>
+                <div class="skill">Laravel</div>
+                <div class="skill">SQL</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Git</div>
+                <div class="skill">GitHub</div>
+                <div class="skill">Figma</div>
+            </div>
+        </div>
+
+        <!-- COURSES -->
+
+        <div class="section" id="courses">
+            <h2>Курсы</h2>
+
+            <div class="courses-grid">
+
+                <div class="course">
+                    <div class="course-title">
+                        Основы программирования
+                    </div>
+
+                    <p>Stepik.org</p>
+
+                    <br>
+
+                    <p>
+                        Изучение алгоритмов, структур данных
+                        и базового программирования.
+                    </p>
+                </div>
+
+                <div class="course">
+                    <div class="course-title">
+                        Веб-разработка
+                    </div>
+
+                    <p>Frontend + Backend</p>
+
+                    <br>
+
+                    <p>
+                        HTML, CSS, JavaScript,
+                        работа с backend-технологиями.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PRACTICE -->
+
+        <div class="section" id="practice">
+            <h2>Практика</h2>
+
+            <div class="project-item">
+                <h3 class="project-title">
+                    Производственная практика
+                </h3>
+
+                <p>
+                    Работа с организацией пространства,
+                    каталогизацией и взаимодействием в команде.
+                </p>
+
+                <div class="project-role">
+                    Командная работа
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3 class="project-title">
+                    Сайт организации
+                </h3>
+
+                <p>
+                    Разработка и поддержка сайта организации
+                    во время практики.
+                </p>
+
+                <div class="project-role">
+                    HTML / CSS / JS
+                </div>
+            </div>
+        </div>
+
+        <!-- PORTFOLIO -->
+
+        <div class="section" id="portfolio">
+            <h2>Портфолио проектов</h2>
+
+            <!-- Django проект -->
+            <div class="project-item">
+                <h3 class="project-title">
+                    Документооборот (Django)
+                </h3>
+
+                <p>
+                    Django-проект для управления документами.
+                    Система авторизации, CRUD, админ-панель.
+                </p>
+
+                <div class="project-role">
+                    Django + SQL
+                </div>
+
+                <br>
+
+                <a href="https://github.com/AntonioSniper/django-sitevaa"
+                   class="project-link" target="_blank">
+                    📂 GitHub репозиторий
+                </a>
+            </div>
+
+            <!-- Laravel проект -->
+            <div class="project-item">
+                <h3 class="project-title">
+                    Pet Shop (Laravel)
+                </h3>
+
+                <p>
+                    Индивидуальный backend-проект на Laravel.
+                    Интернет-магазин для зоомагазина.
+                </p>
+
+                <div class="project-role">
+                    Laravel + SQLite
+                </div>
+
+                <br>
+
+                <a href="https://github.com/AntonioSniper/pet-shop"
+                   class="project-link" target="_blank">
+                    📂 GitHub репозиторий
+                </a>
+            </div>
+
+            <div class="project-item">
+                <h3 class="project-title">
+                    СКУД
+                </h3>
+
+                <p>
+                    Система контроля и управления доступом.
+                    Проектирование базы данных.
+                </p>
+
+                <div class="project-role">
+                    Проектирование БД
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3 class="project-title">
+                    Редизайн
+                </h3>
+
+                <p>
+                    UX/UI редизайн цифрового продукта.
+                </p>
+
+                <div class="project-role">
+                    Figma + Frontend
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3 class="project-title">
+                    Чемпионат
+                </h3>
+
+                <a href="https://antoniosniper.github.io/Chemp/"
+                   class="project-link" target="_blank">
+                    Модуль А
+                </a>
+
+                <br>
+
+                <a href="https://antoniosniper.github.io/onlineschool/"
+                   class="project-link" target="_blank">
+                    Модуль Б
+                </a>
+
+                <br>
+
+                <a href="https://antoniosniper.github.io/doska/"
+                   class="project-link" target="_blank">
+                    Модуль В
+                </a>
+            </div>
+
+            <div class="project-item">
+                <h3 class="project-title">
+                    Визуальная новелла
+                </h3>
+
+                <a href="https://antoniosniper.github.io/practikatwine/"
+                   class="project-link" target="_blank">
+                    Открыть проект
+                </a>
+            </div>
+
+        </div>
+
+        <!-- OLYMPIADS -->
+
+        <div class="section" id="olympiads">
+            <h2>Олимпиады и соревнования</h2>
+
+            <ul>
+                <li>ArtMasters</li>
+                <li>ИТ-Планета</li>
+                <li>Траектория будущего</li>
+                <li>Большие вызовы</li>
+            </ul>
+        </div>
+
+        <!-- ACTIVITY -->
+
+        <div class="section" id="activity">
+            <h2>Социальная активность</h2>
+
+            <p>
+                Участие в образовательных мероприятиях,
+                командных проектах и IT-сообществе.
+            </p>
+
+            <br>
+
+            <a href="https://drive.google.com/"
+               class="project-link" target="_blank">
+                Материалы и документы
+            </a>
+        </div>
+
+        <!-- CERTIFICATES -->
+
+        <div class="section">
+            <h2>Сертификаты</h2>
+
+            <a href="https://drive.google.com/drive/folders/1Ja7yiK9vIZOBZXcZ9NSjsYt5KAQRcCHJ?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto"
+               class="project-link" target="_blank">
+                Открыть сертификаты
+            </a>
+        </div>
+
+        <!-- CONTACTS -->
+
+        <div class="section" id="contacts">
+            <h2>Контакты</h2>
+
+            <p>
+                📧 Email:
+                <strong>
+                    karton790@gmail.com
+                </strong>
+            </p>
+
+            <br>
+
+            <p>
+                💻 GitHub:
+                <a href="https://github.com/antoniosniper" target="_blank">
+                    github.com/antoniosniper
+                </a>
+            </p>
+
+            <br>
+
+            <p>
+                📋 YouGile:
+                <a href="https://ru.yougile.com/board/bba3wvj265pi" target="_blank">
+                    Доска проектов
+                </a>
+            </p>
+
+            <br>
+
+            <p>
+                💬 Telegram:
+                <strong>@karton790</strong>
+            </p>
+        </div>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <p>
+                © 2025 Ведяйкин Антон
+            </p>
+
+            <br>
+
+            <p>
+                Готов к стажировкам и работе
+                в сфере IT
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
