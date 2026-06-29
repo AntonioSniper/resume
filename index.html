@@ -184,6 +184,7 @@
         ul {
             padding-left: 20px;
         }
+
         li {
             margin: 8px 0;
         }
@@ -205,6 +206,7 @@
 
 <body>
 
+    <!-- NAVBAR -->
     <div class="navbar">
         <div class="nav-container">
             <a href="#about" class="nav-link">Обо мне</a>
@@ -237,9 +239,16 @@
         <!-- ABOUT -->
         <div class="section" id="about">
             <h2>Обо мне</h2>
-            <p>Студент направления «Информационные системы и программирование». Изучаю backend и web-разработку, активно работаю с Django, Laravel, SQL и современными веб-технологиями.</p>
+            <p>
+                Студент направления «Информационные системы и программирование».
+                Изучаю backend и web-разработку, активно работаю
+                с Django, Laravel, SQL и современными веб-технологиями.
+            </p>
             <br />
-            <p>Интересуюсь разработкой информационных систем, backend-приложений и автоматизацией процессов.</p>
+            <p>
+                Интересуюсь разработкой информационных систем,
+                backend-приложений и автоматизацией процессов.
+            </p>
         </div>
 
         <!-- SKILLS -->
@@ -291,9 +300,7 @@
                 <div class="project-role">Участник конференции</div>
                 <br />
                 <div style="display:flex; flex-wrap:wrap; gap:15px; margin:15px 0;">
-                    <img src="assets/events/conference-nito.jpg" 
-                         alt="Фото с конференции НИТО-2026" 
-                         style="max-width:300px; width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+                    <img src="assets/events/conference-nito.jpg" alt="Фото с конференции НИТО-2026" style="max-width:300px; width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
                 </div>
                 <a href="assets/certificates/1c-conference.jpg" target="_blank" class="project-link">📄 Сертификат участника</a>
             </div>
@@ -304,32 +311,34 @@
             <h2>Практика</h2>
 
             <div class="project-item">
-                <h3 class="project-title">Производственная практика</h3>
+                <h3 class="project-title">🏢 Производственная практика</h3>
                 <p>Работа с организацией пространства, каталогизацией и взаимодействием в команде.</p>
                 <div class="project-role">Командная работа</div>
             </div>
 
             <div class="project-item">
-                <h3 class="project-title">Сайт организации</h3>
-                <p>Разработка и поддержка сайта организации во время практики.</p>
-                <div class="project-role">HTML / CSS / JS</div>
-            </div>
-
-            <!-- РЕЗЮМЕ -->
-            <div class="project-item">
-                <h3 class="project-title">📄 Резюме</h3>
-                <p>Скачать резюме в формате PDF.</p>
+                <h3 class="project-title">🌐 Сайт организации (Библиотека им. Я. Смелякова)</h3>
+                <p>
+                    Разработка сайта-визитки для библиотеки с системой бронирования книг,
+                    авторизацией и админ-панелью. Проект выполнен в рамках производственной практики.
+                </p>
+                <p><strong>Стек:</strong> Next.js, React, JSON-база данных, CSS</p>
+                <div class="project-role">Fullstack-разработка</div>
                 <br />
-                <a href="assets/docs/resume.pdf" class="project-link" target="_blank">
-                    📥 Скачать резюме (PDF)
+                <a href="https://site-organization-nextjs.onrender.com" class="project-link" target="_blank">
+                    🌐 Открыть сайт
+                </a>
+                <br />
+                <a href="https://github.com/AntonioSniper/site-organization-nextjs" class="project-link" target="_blank">
+                    📂 GitHub репозиторий
                 </a>
             </div>
-
         </div>
 
         <!-- PORTFOLIO -->
         <div class="section" id="portfolio">
             <h2>Портфолио проектов</h2>
+
             <div class="project-item">
                 <h3 class="project-title">Документооборот (Django)</h3>
                 <p>Django-проект для управления документами. Система авторизации, CRUD, админ-панель.</p>
@@ -337,6 +346,7 @@
                 <br />
                 <a href="https://github.com/AntonioSniper/django-sitevaa" class="project-link" target="_blank">📂 GitHub репозиторий</a>
             </div>
+
             <div class="project-item">
                 <h3 class="project-title">Pet Shop (Laravel)</h3>
                 <p>Индивидуальный backend-проект на Laravel. Интернет-магазин для зоомагазина.</p>
@@ -344,12 +354,14 @@
                 <br />
                 <a href="https://github.com/AntonioSniper/pet-shop" class="project-link" target="_blank">📂 GitHub репозиторий</a>
             </div>
+
             <div class="project-item">
                 <h3 class="project-title">Чемпионат</h3>
                 <a href="https://antoniosniper.github.io/Chemp/" class="project-link" target="_blank">Модуль А</a><br />
                 <a href="https://antoniosniper.github.io/onlineschool/" class="project-link" target="_blank">Модуль Б</a><br />
                 <a href="https://antoniosniper.github.io/doska/" class="project-link" target="_blank">Модуль В</a>
             </div>
+
             <div class="project-item">
                 <h3 class="project-title">Визуальная новелла</h3>
                 <a href="https://antoniosniper.github.io/practikatwine/" class="project-link" target="_blank">Открыть проект</a>
@@ -359,6 +371,7 @@
         <!-- OLYMPIADS -->
         <div class="section" id="olympiads">
             <h2>Олимпиады и соревнования</h2>
+
             <div class="project-item">
                 <h3 class="project-title">🌍 ИТ-Планета</h3>
                 <p>Международная олимпиада в сфере информационных технологий.</p>
@@ -369,6 +382,7 @@
                 <br />
                 <a href="https://it-planet.org/" target="_blank" class="project-link">🌐 Сайт олимпиады</a>
             </div>
+
             <ul>
                 <li>ArtMasters</li>
                 <li>Траектория будущего</li>
@@ -401,6 +415,7 @@
             <p>💬 Telegram: <strong>@karton790</strong></p>
         </div>
 
+        <!-- FOOTER -->
         <footer>
             <p>© 2025 Ведяйкин Антон</p>
             <br />
@@ -408,5 +423,6 @@
         </footer>
 
     </div>
+
 </body>
 </html>
